@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maple Leaf Salon</title>
+    <link rel="icon" type="image/x-icon" href="/img/icon.png" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="/index.html">
+          <img src="/img/logo.png" width="55" />
+        </a>
+        <nav>
+          <ul class="menu">
+            <li class="transition"><a href="/index.html">Trang chủ</a></li>
+            <li class="transition">
+              <a href="./service.html">Dịch Vụ</a>
+            </li>
+            <li class="transition">
+              <a href="./product.html">Sản Phẩm</a>
+            </li>
+            <li class="transition">
+              <a href="./collection.html">Bộ sưu tập</a>
+            </li>
+            <li class="transition booking_menu">
+              <a href="./booking.html">Đặt lịch</a>
+            </li>
+            <li class="transition login.menu">
+              <a href="./login.html">Đăng nhập</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="login-page">
+      <div class="login-card">
+        <div class="brand">
+          <span class="brand-icon">✦</span>
+          <h1>Maple Leaf</h1>
+          <p>HAIR SALON</p>
+        </div>
+        <form class="login-form auth-form active">
+          <h2>Welcome Back</h2>
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" required />
+          </div>
+          <div class="input-group">
+            <label>Mật khẩu</label>
+            <input type="password" placeholder="••••••••" required />
+          </div>
+          <div class="login-options">
+            <label>
+              <input type="checkbox" />
+              Ghi nhớ tôi
+            </label>
+            <a href="#">Quên mật khẩu?</a>
+          </div>
+          <button type="submit">ĐĂNG NHẬP</button>
+          <p class="register">
+            Chưa có tài khoản?
+            <a href="#" id="showRegister">Đăng ký</a>
+          </p>
+        </form>
+        <form class="register-form auth-form">
+          <h2>Tạo tài khoản</h2>
+          <div class="input-group">
+            <label>Họ và tên</label>
+            <input
+              type="text"
+              id="regName"
+              placeholder="Nguyễn Văn A"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label>Email</label>
+            <input
+              type="email"
+              id="regEmail"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label>Số điện thoại</label>
+            <input type="tel" id="regPhone" placeholder="0901234567" />
+          </div>
+          <div class="input-group">
+            <label>Mật khẩu</label>
+            <input
+              type="password"
+              id="regPass"
+              placeholder="••••••••"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label>Nhập lại mật khẩu</label>
+            <input
+              type="password"
+              id="regPass2"
+              placeholder="••••••••"
+              required
+            />
+          </div>
+          <p class="form-error" id="regError"></p>
+          <button type="submit">ĐĂNG KÝ</button>
+          <p class="register">
+            Đã có tài khoản?
+            <a href="#" id="showLogin">Đăng nhập</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="../js/auth.js"></script>
+</html>

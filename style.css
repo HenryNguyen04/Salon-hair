@@ -1,0 +1,423 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("./fonts/Oswald-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "font2";
+  src: url("./fonts/Oswald-Bold.woff2") format("woff2");
+}
+body {
+  margin: 0;
+  color: #2f3330;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+header {
+  border-bottom: 1px solid #ffffff17;
+  position: fixed;
+  background: #c0c0c0;
+  width: 100vw;
+  border-radius: 5px;
+  padding: 5px 1px;
+  top: 0;
+  left: 0;
+  height: 50px;
+  z-index: 10;
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+header > div > a {
+  flex-shrink: 0;
+  transform: none;
+}
+header nav {
+  flex: 1;
+  min-width: 0;
+}
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.nav > li > a {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.menu .transition {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.menu > .transition > a {
+  color: #000;
+  text-shadow: 0 1px 4px #00000040;
+  padding: 10px 30px;
+  font-size: 17px;
+  line-height: 20px;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.menu > .transition > a:hover {
+  color: #e5e7eb;
+}
+.menu > .transition > a::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: 4px;
+  width: calc(100% - 60px);
+  height: 2px;
+  background-color: #e5e7eb;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.menu > .transition > a:hover::after {
+  transform: scaleX(1);
+}
+.menu > .booking_menu {
+  display: flex;
+  align-items: stretch;
+  background: linear-gradient(90deg, #926533 0%, #f5d580 50%, #926533 100%);
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.menu > .booking_menu > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 10px;
+  min-height: 45px;
+  box-sizing: border-box;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+.menu > .booking_menu > a::after {
+  display: none;
+}
+.menu > .booking_menu > a:hover {
+  color: #fff;
+  background: #2f3330;
+}
+.hero-background {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+.hero-background img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(30, 28, 28, 0.85) 0%,
+    rgba(30, 28, 28, 0.55) 40%,
+    rgba(30, 28, 28, 0) 75%
+  );
+}
+.hero-content {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+  max-width: 650px;
+  color: #fff;
+}
+.hero-sub {
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: #ddd;
+  margin: 0 0 10px;
+}
+.hero-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(40px, 6vw, 80px);
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 25px;
+}
+.hero-desc {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin: 0;
+}
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 35px;
+}
+.btn-outline {
+  padding: 18px 50px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  letter-spacing: 2px;
+}
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.link-plain {
+  color: #fff;
+}
+.title-main {
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 10%;
+  color: #2f3330;
+}
+.title-main span {
+  text-transform: uppercase;
+  color: #070909;
+  font-size: clamp(16px, 4vw, 25px);
+  font-weight: 900;
+  font-family: "font2";
+}
+.content-responsive {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+.title-left {
+  color: #000;
+  margin: 0;
+  font-family: "font2";
+  font-weight: 900;
+  line-height: 1.5;
+  font-size: 15px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #926533 0%, #f5d580 50%, #926533 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 20px;
+  position: relative;
+}
+.empty {
+  text-align: center;
+  color: #999;
+  width: 100%;
+}
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background:
+    linear-gradient(90deg, rgba(21, 20, 18, 0.95), rgba(21, 20, 18, 0.65)),
+    url("images/salon.jpg") center / cover no-repeat;
+}
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 50px 45px;
+  background: rgba(25, 23, 20, 0.92);
+  border: 1px solid rgba(211, 178, 117, 0.25);
+  border-radius: 4px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+}
+.login-card button {
+  width: 100%;
+  height: 52px;
+}
+.brand {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.brand-icon {
+  display: block;
+  color: #d6b477;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+.brand h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 7px;
+  color: #f2e6d0;
+}
+.brand p {
+  margin-top: 7px;
+  font-size: 9px;
+  letter-spacing: 5px;
+  color: #bfa77b;
+}
+.login-card h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+.subtitle {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 32px;
+
+  color: #999;
+  font-size: 13px;
+}
+.input-group {
+  margin-bottom: 22px;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 9px;
+
+  color: #d8d0c3;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.input-group input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  color: #fff;
+  background: #211f1b;
+  border: 1px solid #3b3832;
+  border-radius: 2px;
+  outline: none;
+  font-family: inherit;
+  transition: 0.25s;
+}
+.input-group input::placeholder {
+  color: #666;
+}
+.input-group input:focus {
+  border-color: #c9a96e;
+  box-shadow: 0 0 0 2px rgba(201, 169, 110, 0.08);
+}
+.login-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0 25px;
+  font-size: 11px;
+  color: #888;
+}
+.login-options label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.login-options input {
+  accent-color: #c9a96e;
+}
+a {
+  color: #c9a96e;
+  text-decoration: none;
+}
+a:hover {
+  color: #e0c48d;
+}
+button {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 2px;
+  background: #c9a96e;
+  color: #171512;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #dfc38d;
+  transform: translateY(-1px);
+}
+.register {
+  margin-top: 28px;
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+}
+.register a {
+  margin-left: 4px;
+}
+.auth-form {
+  display: none;
+}
+.auth-form.active {
+  display: block;
+}
+.form-error {
+  color: #d93025;
+  font-size: 14px;
+  min-height: 18px;
+  margin: 4px 0 10px;
+}
+.intro {
+  background: #2d2926;
+  padding: 140px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-inner {
+  max-width: 920px;
+  text-align: center;
+}
+
+.intro-icon {
+  display: block;
+  margin: 0 auto 28px;
+  color: #8a7f79;
+  font-size: 40px;
+}
+
+.intro-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(32px, 4.5vw, 56px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #d4d6dc;
+  margin: 0 0 40px;
+}
+
+.intro-desc {
+  font-size: clamp(15px, 1.5vw, 19px);
+  font-weight: 400;
+  line-height: 1.9;
+  color: #8f827c;
+  margin: 0;
+}
