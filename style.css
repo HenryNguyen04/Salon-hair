@@ -421,3 +421,256 @@ button:hover {
   color: #8f827c;
   margin: 0;
 }
+.container-service-intro {
+  background: #4a4540;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 270px;
+  padding: 25px 20px;
+  margin-top: 0;
+}
+
+.container-service-intro h1,
+.container-service-intro h2,
+.title-service-intro {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #cfd1d9;
+  margin: 0;
+}
+
+.text-service-intro {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #dbceca;
+  margin-top: 28px;
+}
+.services-wrapper {
+  background: #2a2724;
+  width: 100%;
+  padding: 40px 0px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #645c54;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 305px;
+  background: #403d39;
+}
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 20px;
+}
+
+.service-content h3 {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #e6e8ee;
+  margin: 0 0 14px;
+}
+
+.service-desc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #b3a099;
+  margin: 0 0 14px;
+}
+
+.service-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 22px;
+}
+
+.service-content li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #a39691;
+}
+
+.btn-book {
+  align-self: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: #3f4350;
+  border: 1px solid #7d8190;
+  padding: 8px 12px;
+  transition: background 0.2s;
+}
+
+.btn-book:hover {
+  background: #565a6b;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.footer {
+  background: #2d2a27;
+  color: #cfd1d9;
+  padding: 80px 20px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.footer-monogram {
+  width: 40px;
+  opacity: 0.25;
+  margin-bottom: 18px;
+}
+
+.footer-brand {
+  font-family: "Noto Serif", Georgia, serif;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #cfd1d9;
+  margin: 0;
+}
+
+.footer-sub {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #8c7b75;
+  margin-top: 4px;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto 80px;
+}
+
+.footer-col h3,
+.footer-social h3 {
+  font-family: "Noto Serif", Georgia, serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #e6e8ee;
+  margin: 0 0 22px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.footer-col a {
+  color: #cfd1d9;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+.footer-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer-info i {
+  width: 14px;
+  margin-top: 3px;
+  color: #8c7b75;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-social {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.footer-social h3 {
+  font-size: 17px;
+  margin-bottom: 24px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icons a {
+  color: #cfd1d9;
+  font-size: 16px;
+  transition:
+    color 0.2s,
+    transform 0.2s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-mini-logo {
+  width: 18px;
+  opacity: 0.5;
+  margin-bottom: 14px;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #8c7b75;
+  margin: 0;
+}
