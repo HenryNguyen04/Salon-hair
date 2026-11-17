@@ -541,7 +541,7 @@ button:hover {
   }
 }
 .footer {
-  background: #2d2a27;
+  background: #2a2623;
   color: #cfd1d9;
   padding: 80px 20px 40px;
   font-family: Arial, Helvetica, sans-serif;
@@ -559,12 +559,12 @@ button:hover {
   margin-bottom: 18px;
 }
 
-.footer-brand {
+.footer .footer-brand {
+  text-align: center;
   font-family: "Noto Serif", Georgia, serif;
   font-size: 26px;
   font-weight: 400;
   letter-spacing: 3px;
-  text-transform: uppercase;
   color: #cfd1d9;
   margin: 0;
 }
@@ -673,4 +673,147 @@ button:hover {
   font-size: 13px;
   color: #8c7b75;
   margin: 0;
+}
+.cr-body {
+  background: #2a2623;
+  color: #d9d2c7;
+}
+.cr-main {
+  padding: 110px 20px 80px;
+}
+.cr-form-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.cr-body h1,
+.cr-body h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.2;
+}
+.cr-body h1 {
+  font-size: clamp(36px, 5vw, 48px);
+  text-align: center;
+  color: #f2e6d0;
+  margin: 0 0 14px;
+}
+.cr-intro {
+  text-align: center;
+  color: #9a8f82;
+  font-size: 15px;
+  max-width: 45em;
+  margin: 0 auto 44px;
+}
+
+.cr-form h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  color: #f2e6d0;
+  margin: 38px 0 22px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #3b3832;
+}
+.cr-form h2:first-child {
+  margin-top: 0;
+}
+
+.cr-field {
+  margin-bottom: 20px;
+}
+.cr-field label,
+.cr-group legend {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0;
+}
+.cr-field input {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  background: #24211f;
+  color: #fff;
+  border: 1px solid #3b3832;
+  border-radius: 2px;
+  font: inherit;
+  font-size: 13px;
+  outline: none;
+}
+.cr-field input::placeholder {
+  color: #6b645c;
+}
+.cr-field input:focus {
+  border-color: #c9a96e;
+}
+.cr-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.cr-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.cr-check input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: #c9a96e;
+  cursor: pointer;
+}
+.cr-group {
+  border: 0;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.cr-group .cr-check {
+  margin-bottom: 8px;
+}
+
+.cr-error {
+  min-height: 22px;
+  margin: 18px 0 8px;
+  color: #ff8a80;
+  font-size: 13px;
+}
+.cr-error.ok {
+  color: #9ad29a;
+}
+
+.cr-submit {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 2px;
+  background: #533e29;
+  color: #fff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+.cr-submit:hover {
+  background: #c9a96e;
+  color: #171512;
+  transform: none;
+}
+
+@media (max-width: 560px) {
+  .cr-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
